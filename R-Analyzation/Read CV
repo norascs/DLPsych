@@ -1,0 +1,10 @@
+data <- read.csv("stim.csv", header = TRUE)
+class(data)
+head(data)
+plot(data)
+install.packages("ggplot2")
+library(ggplot2);
+x <- data$year_similarity
+y <- data$cue
+
+plot(x,y)
